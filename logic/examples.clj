@@ -19,3 +19,7 @@
 (println (shipping-charge true 100.0))
 
 (println (shipping-charge false 100.0))
+
+(println (= 2 2 2 2 2))
+
+(println (= 2 2 3 2 2))
