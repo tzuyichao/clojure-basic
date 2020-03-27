@@ -13,3 +13,5 @@
 (def book-remove-published (dissoc book :published :youcanfindme))
 (println "book: " book)
 (println "book-remove-published: " book-remove-published)
+
+(println (keys book))
