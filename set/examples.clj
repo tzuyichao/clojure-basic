@@ -6,3 +6,9 @@
 ;(def authors #{"Dickens" "Austen" "King" "Austen"})
 
 ;(println authors)
+
+(def authors #{"Dickens" "Austen" "King"})
+
+(println "genres contains \"Austen\"? " (contains? genres "Austen"))
+
+(println "authors contains \"Austen\"? " (contains? authors "Austen"))
