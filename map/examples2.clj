@@ -15,3 +15,4 @@
 (println "book-remove-published: " book-remove-published)
 
 (println (keys book))
+(println (vals book))
