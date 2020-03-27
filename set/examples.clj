@@ -12,3 +12,8 @@
 (println "genres contains \"Austen\"? " (contains? genres "Austen"))
 
 (println "authors contains \"Austen\"? " (contains? authors "Austen"))
+
+(def more-authors (conj authors "Clarke"))
+
+(println "more-authors: " more-authors)
+(println "authors:" authors)
