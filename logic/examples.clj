@@ -23,3 +23,5 @@
 (println (= 2 2 2 2 2))
 
 (println (= 2 2 3 2 2))
+
+(println (not= "Anna Karenina" "Jane Eyre"))
