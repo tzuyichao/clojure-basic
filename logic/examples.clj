@@ -25,3 +25,9 @@
 (println (= 2 2 3 2 2))
 
 (println (not= "Anna Karenina" "Jane Eyre"))
+
+(def a  15)
+(def b 10)
+
+(if (> a b)
+  (println "a is bigger than b"))
