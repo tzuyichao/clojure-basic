@@ -24,3 +24,7 @@
 
 (println by-author2)
 (println new-by-author2)
+
+(def new-by-author2-1 (assoc-in by-author2 [:emma :copies] 10002))
+(println by-author2)
+(println new-by-author2-1)
