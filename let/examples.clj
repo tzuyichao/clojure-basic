@@ -37,6 +37,7 @@
 
 (defn uppercase-author2 [book]
   (if-let [author (:author book)]
-    (.toUpperCase author)))
+    (.toUpperCase author)
+    "ANONYMOUS"))
 (println (uppercase-author2 emma))
 (println (uppercase-author2 the-2012))
