@@ -8,3 +8,5 @@
 
 (println (my-inc-1 41))
 (println (my-inc-2 41))
+
+(println (/ (* 80000 30) 10000.0))
