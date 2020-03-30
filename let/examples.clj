@@ -16,3 +16,12 @@
 (println (compute-discount-amount 10.0 0.1 10.0))
 ;; Unable to resolve symbol: discount-amount2 in this context
 ;(println discount-amount2)
+
+(defn compute-discount-amount2 [amount discount-percent min-charge]
+  (let [discount (* amount discount-percent)
+        discount-amount (- amount discount)])
+  (if (> discount-amount min-charge)
+    discount-amount
+    min-charge))
+
+(println (compute-discount-amount2 10.0 0.1 4.9))
