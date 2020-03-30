@@ -12,7 +12,7 @@
 (def by-author2
   {:name "Jane Austen"
    :emma {:title "Emma" :copies 1000} 
-   :s-and-s {:title "Sense and Sensibility" :copies 10000}})
+   :sense-and-sensibility {:title "Sense and Sensibility" :copies 10000}})
 
 (def new-by-author (update-in by-author [:book :copies] inc))
 
