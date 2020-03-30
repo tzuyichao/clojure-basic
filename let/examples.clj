@@ -25,3 +25,18 @@
     min-charge))
 
 (println (compute-discount-amount2 10.0 0.1 4.9))
+
+(def emma {:title "Emma" :author "jane austen"})
+(def the-2012 {:title "2012"})
+
+(defn uppercase-author [book]
+  (let [author (:author book)]
+    (if author
+      (.toUpperCase author))))
+(println (uppercase-author emma))
+
+(defn uppercase-author2 [book]
+  (if-let [author (:author book)]
+    (.toUpperCase author)))
+(println (uppercase-author2 emma))
+(println (uppercase-author2 the-2012))
