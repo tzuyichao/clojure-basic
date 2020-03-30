@@ -28,3 +28,13 @@
 (def new-by-author2-1 (assoc-in by-author2 [:emma :copies] 10002))
 (println by-author2)
 (println new-by-author2-1)
+
+(def by-author3
+  {:name "Jane Austen"
+   :books [{:title "Emma" :copies 1000} 
+           {:title "Sense and Sensibility" :copies 10000}]})
+
+(def new-by-author3 (update-in by-author3 [:books 0 :copies] inc))
+
+(println by-author3)
+(println new-by-author3)
