@@ -16,3 +16,6 @@
   (debug "Calling..."))
 
 (debug "you cannot see me") 
+
+;; Unable to resolve var: let-bound in this context
+;(let [let-bound 43] #'let-bound)
