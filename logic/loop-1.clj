@@ -10,3 +10,5 @@
 (def default-profile (zipmap [:score :hits :friends :level :energy :boost] (repeat 0)))
 
 (println default-profile)
+
+(println (rand-int 100))
