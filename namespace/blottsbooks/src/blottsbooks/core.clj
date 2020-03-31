@@ -1,8 +1,8 @@
 (ns blottsbooks.core
-  (:require blottsbooks.pricing)
+  (:require [blottsbooks.pricing :as pricing])
   (:gen-class))
 
 (defn -main
   "I don't do a whole lot ... yet."
   [& args]
-  (println (blottsbooks.pricing/discount-price {:title "Emma", :price 9.9})))
+  (println (pricing/discount-price {:title "Emma", :price 9.9})))
