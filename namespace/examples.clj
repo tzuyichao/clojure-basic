@@ -20,3 +20,5 @@
 (require 'clojure.data)
 
 (println (clojure.data/diff literature horror))
+
+(println (ns-map 'clojure.core))
