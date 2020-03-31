@@ -36,3 +36,5 @@
 
 (if (some cheap? books)
   (println "We have cheap books for sale!"))
+
+(println (map (fn [book] (count (:title book))) books))
