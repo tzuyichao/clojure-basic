@@ -27,9 +27,12 @@
 
 (println "map books with :title to title sequence:" (map :title books))
 
-(def cheep?
+(def cheap?
   (fn [book]
     (when (<= (:price book) 9.99)
       book)))
 
-(println "cheep books:" (filter cheep? books))
+(println "cheap books:" (filter cheap? books))
+
+(if (some cheap? books)
+  (println "We have cheap books for sale!"))
