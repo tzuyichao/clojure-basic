@@ -12,3 +12,7 @@
 (println default-profile)
 
 (println (rand-int 100))
+
+(println (take 10 (repeatedly (partial rand-int 100))))
+
+(println "get 5 random numner" (repeatedly 5 (partial rand-int 50)))
