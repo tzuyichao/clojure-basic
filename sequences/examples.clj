@@ -48,3 +48,5 @@
 
 (println (str (interpose " // " (map :title (take 3 (reverse (sort-by :rating books)))))))
 (println (apply str (interpose " // " (map :title (take 3 (reverse (sort-by :rating books)))))))
+
+(apply (fn [& x] (println x)) (interpose " // " (map :title (take 3 (reverse (sort-by :rating books))))))
