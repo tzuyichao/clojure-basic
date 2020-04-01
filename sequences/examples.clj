@@ -38,3 +38,13 @@
   (println "We have cheap books for sale!"))
 
 (println (map (fn [book] (count (:title book))) books))
+
+(defn hi-price [hi book]
+  (if (> (:price book) hi)
+    (:price book)
+    hi))
+
+(println (reduce hi-price 0 books))
+
+(println (str (interpose " // " (map :title (take 3 (reverse (sort-by :rating books)))))))
+(println (apply str (interpose " // " (map :title (take 3 (reverse (sort-by :rating books)))))))
