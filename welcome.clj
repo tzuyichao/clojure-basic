@@ -20,3 +20,15 @@
 
 (println test)
 (eval test)
+
+(def by-title (agent {}))
+
+(def a '(1 2 3 true "Lucky"))
+(def b '(println "Hello!"))
+
+(println (type a))
+(println (count a))
+(println (first a))
+(println (type b))
+(println (count b))
+(println (first b))
