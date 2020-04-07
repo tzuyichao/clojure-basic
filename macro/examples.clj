@@ -45,3 +45,13 @@
   (list 'println "Something is" message))
 
 (print-it "test")
+
+(def test-list `(:a :syntax "quoted" :list 1 2 3 4))
+(println test-list)
+
+(def n 100)
+(def test-list-2 `(n :qq))
+(println test-list-2)
+
+(def test-list-3 `(~n :qq))
+(println test-list-3)
