@@ -10,8 +10,13 @@
   (println "** second argument:" b)
   (/ (+ a b) 2.0))
 
+(def test '(println "Elixir"))
+
 (say-welcome "Clojure")
 
 (say-welcome (average 5.0 10.0))
 
 (chatty-average 6.0 8.8)
+
+(println test)
+(eval test)
