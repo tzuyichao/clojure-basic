@@ -24,3 +24,7 @@
 
 (println books2)
 (println (meta books2))
+
+;; !!!
+(def books3 (with-meta ["Emma" "1984"] {:favorite-books false}))
+(println (= books1 books3)) ; true
