@@ -17,3 +17,16 @@
 (def list1 '(:jar1 1 2 3 :jar2))
 
 (println (type list1))
+
+(def list2 (list println "Hello"))
+(def list3 '(println "Hello"))
+
+(println list2)
+(println list3)
+
+(println (type list2))
+(println (type list3))
+
+(eval list2)
+(eval list3)
+
