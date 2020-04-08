@@ -14,3 +14,5 @@
 (def uuid1 (java.util.UUID/randomUUID))
 
 (println uuid1)
+
+(println (uuid? uuid1))
