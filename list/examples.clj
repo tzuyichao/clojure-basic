@@ -30,3 +30,13 @@
 (eval list2)
 (eval list3)
 
+(def list4 (cons println "Hello"))
+
+(eval list4)
+
+(println (count [1 2 3 4]))
+(println (count '(1 2 3 4)))
+
+(println (conj ["1" "2"] "3"))
+(println (conj '("1" "2") "3"))
+
