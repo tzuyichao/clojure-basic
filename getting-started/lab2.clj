@@ -1,3 +1,3 @@
 (load-file "lab1.clj")
 
-(hello "Joshua")
+(war-games/hello "Joshua")
