@@ -53,3 +53,16 @@
                  {:jam1 "orange", :jam3 "red"}
                  {:jam4 "blue"}))
 (println map6)
+
+;; set
+(def set1 #{})
+(println set1)
+
+(def set2 #{:r :b :w})
+(def set3 #{:w :p :y})
+(use 'clojure.set)
+(println "set2:" set2)
+(println "set3:" set3)
+(println "union:" (clojure.set/union set2 set3))
+(println "difference:" (clojure.set/difference set2 set3))
+(println "intersection:" (clojure.set/intersection set2 set3))
