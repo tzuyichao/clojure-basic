@@ -27,3 +27,9 @@
 (println map1)
 (println map2)
 (println (= map1 map2))
+
+;; explicit get
+(println (get map2 :jam3))
+(println (get map2 :jam3 "not found"))
+(println (:jam3 map2))
+(println (:jam3 map2 "not found"))
