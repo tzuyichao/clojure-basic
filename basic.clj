@@ -16,3 +16,14 @@
 (println uuid1)
 
 (println (uuid? uuid1))
+
+(println (conj '(:toast :butter) :jam :honey))
+
+;; map
+
+(def map1 {:jam1 "strawberry", :jam2 "blackberry"})
+(def map2 {:jam1 "strawberry" :jam2 "blackberry"})
+
+(println map1)
+(println map2)
+(println (= map1 map2))
