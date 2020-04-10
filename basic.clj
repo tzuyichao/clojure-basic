@@ -37,3 +37,13 @@
 ;; keys and vals
 (println "keys:" (keys map2))
 (println "vals:" (vals map2))
+
+;; assoc and dissoc
+(def map3 (assoc map2 :jam3 "orange"))
+(println "map2:" map2)
+(println "map3:" map3)
+
+(def map4 (dissoc map3 :jam3))
+(println (= map4 map2))
+(def map5 (dissoc map4 :jam3))
+(println "after dissoc not exist attribute from map4, (= map5 map4):" (= map5 map4))
