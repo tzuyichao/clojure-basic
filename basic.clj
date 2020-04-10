@@ -47,3 +47,9 @@
 (println (= map4 map2))
 (def map5 (dissoc map4 :jam3))
 (println "after dissoc not exist attribute from map4, (= map5 map4):" (= map5 map4))
+
+;; merge 後面蓋前面
+(def map6 (merge {:jam1 "red", :jam2 "black"}
+                 {:jam1 "orange", :jam3 "red"}
+                 {:jam4 "blue"}))
+(println map6)
