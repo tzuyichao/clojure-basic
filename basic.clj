@@ -89,3 +89,9 @@
 
 (def set6 (disj set5 :jam))
 (println (= set6 set2))
+
+;; quot and "/" 不相等 from https://clojuredocs.org/clojure.core/quot
+(println (= (/ 4 2) (quot 4 2)))
+(println (= (/ 3 2) (quot 3 2)))
+(println (/ 3 2))
+(println (quot 3 2))
