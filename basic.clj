@@ -28,6 +28,9 @@
 (println map2)
 (println (= map1 map2))
 
+;; duplicate key
+;(println {:a 1, :b 2, :a 1})
+
 ;; explicit get
 (println (get map2 :jam3))
 (println (get map2 :jam3 "not found"))
@@ -66,3 +69,23 @@
 (println "union:" (clojure.set/union set2 set3))
 (println "difference:" (clojure.set/difference set2 set3))
 (println "intersection:" (clojure.set/intersection set2 set3))
+
+(def set4 (set {:a 1, :b 2, :c 3}))
+(println set4)
+
+;; get
+
+(println (get set2 :b))
+(println (get set2 :g))
+(println (:b set2))
+(println (:g set2))
+
+(println (contains? set2 :b))
+(println (contains? set2 :g))
+
+;; conj and disj
+(def set5 (conj set2 :jam))
+(println set5)
+
+(def set6 (disj set5 :jam))
+(println (= set6 set2))
