@@ -33,3 +33,7 @@
 (println (get map2 :jam3 "not found"))
 (println (:jam3 map2))
 (println (:jam3 map2 "not found"))
+
+;; keys and vals
+(println "keys:" (keys map2))
+(println "vals:" (vals map2))
