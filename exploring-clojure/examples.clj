@@ -9,3 +9,7 @@
 (def book1 (->Book "Programming Coljure" "Alex Miller"))
 
 (println book1)
+
+(println "another\nmultiline\nstring")
+
+(println (str \h \e \y \space \y \o \u))
