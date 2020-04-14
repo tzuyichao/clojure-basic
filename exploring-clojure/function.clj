@@ -9,3 +9,12 @@
 (println (greeting))
 
 ;(doc greeting)
+
+(defn date [person-1 person-2 & chaperones]
+  (println person-1 "and" person-2 "went out with" (count chaperones) "chaperones."))
+
+(date "Romeo" "Juliet" "Friar Lawrence" "Nurse")
+
+(require '[clojure.string :as str])
+
+(println (filter (fn [w] (> (count w) 2)) (str/split "A fine day" #"\W+")))
