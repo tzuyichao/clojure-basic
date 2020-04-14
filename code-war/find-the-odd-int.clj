@@ -3,9 +3,15 @@
 ;; Given an array, find the integer that appears an odd number of times.
 ;; There will always be only one integer that appears an odd number of times.
 
-;; (first (filter isOdd? (map count val)))
+(defn isOdd? [x]
+  (= (mod x 2) 1))
+
+;; (first (filter isOdd? (reduce freq-map val)))
 (defn find-odd [xs]
-  nil)
+  (ffirst (filter #(isOdd? (second %)) 
+          (reduce #(assoc %1 %2 (inc (%1 %2 0))) 
+            {}
+            xs))))
 
 (ns find-the-odd-int-tests
   (:require [clojure.test :refer :all]
