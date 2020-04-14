@@ -1,5 +1,9 @@
 (ns find-the-odd-int)
 
+;; Given an array, find the integer that appears an odd number of times.
+;; There will always be only one integer that appears an odd number of times.
+
+;; (first (filter isOdd? (map count val)))
 (defn find-odd [xs]
   nil)
 
@@ -17,4 +21,5 @@
     [5 4 3 2 1 5 4 3 2 10 10] 1
     ))
 
+; https://clojure.github.io/clojure/clojure.test-api.html
 (run-tests 'find-the-odd-int-tests)
