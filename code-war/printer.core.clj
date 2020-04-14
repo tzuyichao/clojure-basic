@@ -1,5 +1,11 @@
 (ns printer.core)
 
+;;  a "bad" control string is produced e.g. aaaxbbbbyyhwawiwjjjwwm with letters not from a to m.
+; #Examples:
+; s="aaabbbbhaijjjm"
+; error_printer(s) => "0/14"
+; s="aaaxbbbbyyhwawiwjjjwwm"
+; error_printer(s) => "8/22"
 (defn printer-error [s]
   ; your code
   ) 
