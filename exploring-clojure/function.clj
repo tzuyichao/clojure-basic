@@ -26,3 +26,5 @@
     (filter indexable-word? (str/split text #"\W+"))))
 
 (println (indexable-words "A fine day"))
+
+(println (str/replace "This website is for losers LOL!" #"[aeiouAEIOU]" ""))
