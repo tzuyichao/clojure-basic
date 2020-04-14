@@ -7,7 +7,9 @@
 ; s="aaaxbbbbyyhwawiwjjjwwm"
 ; error_printer(s) => "8/22"
 (defn printer-error [s]
-  ; your code
+  (let [total (count s)
+        bad-count (count (clojure.string/replace s #"[a-m]" ""))]
+        (str bad-count "/" total))
   ) 
 
 (ns printer.core-test
@@ -21,6 +23,12 @@
   (testing "printer-error"
    (def u "aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbmmmmmmmmmmmmmmmmmmmxyz")
    (test-assert(printer-error u) "3/56")
+))
+
+(deftest a-test2
+  (testing "printer-error2"
+    (def u "aaaxbbbbyyhwawiwjjjwwm")
+    (test-assert(printer-error u) "8/22")
 ))
 
 (run-tests 'printer.core-test)
