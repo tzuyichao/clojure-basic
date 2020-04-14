@@ -14,7 +14,9 @@
 
 (println (str \h \e \y \space \y \o \u))
 
-(println (if 0 "zero is true" "zero is false"))
-(println (if nil "nil is true" "nil is false"))
-(println "(true? 0):" (true? 0))
-(println "(false? 0):" (false? 0))
+(println (if 0 "zero is true" "zero is false")) ; 0 is true
+(println (if nil "nil is true" "nil is false")) ; nil is false
+(println "(true? 0):" (true? 0))                ; false
+(println "(false? 0):" (false? 0))              ; false
+(println "(false? false):" (false? false))      ; true
+(println "(false? nil):" (false? nil))          ; false

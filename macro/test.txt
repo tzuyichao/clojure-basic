@@ -1,0 +1,14 @@
+ABC && "DEF LLL" || WWWW
+
+
+ABC -> Term -> Interface
+&& -> AND -> Interface
+"DEF LLL" -> PHRASE -> Interface
+|| -> OR -> Interface
+
+SyntaxOperator.evaluation(query_term, TermHandler, ANDHandler.....)
+SyntaxOperator.result()
+
+=> Jarvis
+NLPAnalyzer.process(query_term, DOCUMENT): QuertString
+QuertString instance return Jarvis
