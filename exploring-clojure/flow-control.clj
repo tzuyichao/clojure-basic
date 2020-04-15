@@ -51,3 +51,15 @@
 (println (range 6))
 (println (rest (range 6)))
 (println (reverse (rest (range 6))))
+
+
+(defn indexed [coll]
+  (map-indexed vector coll))
+
+(println (indexed (str 929)))
+(println (+ (Integer/parseInt (String/valueOf (second (first (indexed (str 929)))))) 5))
+
+(println (map #(println %) (str 929)))
+
+(def a1 (map #(Integer/parseInt (String/valueOf %)) (str 929)))
+(println "Result:" (reduce + a1))
