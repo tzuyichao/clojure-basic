@@ -95,3 +95,13 @@
 (println (= (/ 3 2) (quot 3 2)))
 (println (/ 3 2))
 (println (quot 3 2))
+
+(def map1 (zipmap [:a :b :c] [1 2 3]))
+
+(def map2 (zipmap [:a :b :c :d] [1 2 3]))
+
+(def map3 (zipmap [:a :b :c] [1 2 3 4]))
+
+(println map1)
+(println map2)
+(println map3)
