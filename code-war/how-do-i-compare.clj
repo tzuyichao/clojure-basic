@@ -1,9 +1,13 @@
 (ns how-do-i-compare)
 
+; identical_q means same object
+; 而且有的時候跟Java那邊為了效能做cache有關
+; (identical? 42 42) ; true
+; (identical? 1764 1764) ; false
 (defn what-is [x]
   (cond
-    (identical? x 42) "everything"
-    (identical? x (* 42 42)) "everything squared"
+    (= x 42) "everything"
+    (= x (* 42 42)) "everything squared"
     :else "nothing"))
 
 (ns how-do-i-compare-test
