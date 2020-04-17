@@ -13,7 +13,7 @@
 (defn base-pairs [x lst result]
   (let [elem (first lst)]
     (if (not (nil? elem))
-      (recur x (rest lst) (conj result (list x elem)))
+      (recur x (rest lst) (conj result (vector x elem)))
       result
     )
   ))
@@ -31,9 +31,20 @@
   (pairs-inner lst1 lst2 [])
 )
 
+(defn extract-two [operand1-lst operand2-lst result]
+  (let [operand1 (first operand1-lst)
+        operand2 (first operand2-lst)]
+    (if (and (nil? operand1) (nil? operand2))
+      result
+      (if (nil? operand2)
+        (recur (rest operand1-lst) operand2-lst result)
+        (if (= (java.lang.Math/abs (- operand1 operand2)) 2)
+          (recur operand1-lst (rest operand2-lst) (conj result (vector operand1 operand2)))
+          (recur operand1-lst (rest operand2-lst) result)))))
+  )
 
 (defn twos-difference [lst]
-  ;coding in function
+  (sort #(compare %1 %2) (into [] (filter #(< (first %) (second %)) (filter #(= (java.lang.Math/abs (- (first %) (second %))) 2) (pairs lst lst)))))
   )
 
 (ns difftwo.test
