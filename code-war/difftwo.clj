@@ -21,8 +21,7 @@
 (defn pairs-inner [lst1 lst2 result]
   (let [elem (first lst1)]
     (if (not (nil? elem))
-      (do
-        (recur (rest lst1) lst2 (base-pairs elem lst2 result)))
+      (recur (rest lst1) lst2 (base-pairs elem lst2 result))
       result
     )
   )
