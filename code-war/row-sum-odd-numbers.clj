@@ -1,11 +1,10 @@
 (ns row-sum-odd-numbers.core)
 
-(defn row-sum-odd-numbers [row-num]
-  # your code here
-)
+(defn row-sum-odd-numbers [row-num] 
+  1)
 
 (ns row-sum-sample-tests
-  (require [clojure.test :refer :all]
+  (:require [clojure.test :refer :all]
            [row-sum-odd-numbers.core :refer :all]))
 
 (deftest sample-tests
