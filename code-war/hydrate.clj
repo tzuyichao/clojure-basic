@@ -1,6 +1,18 @@
 (ns hydrate)
+
+(defn compute-glasses-of-water [str]
+  (letfn [(extract [matcher current]
+    (let [match (re-find matcher)]
+      (if (nil? match)
+        current
+        (recur matcher (+ current (Integer/parseInt match))))))]
+    (extract (re-matcher #"[0-9]+" str) 0)))
+
 (defn hydrate [drink-string]
-  ;insert party here
+  (let [glasses-of-water (compute-glasses-of-water drink-string)]
+    (if (> glasses-of-water 1)
+      (str glasses-of-water " glasses of water")
+      (str glasses-of-water " glass of water")))
 )
 
 (ns hydrate-test
