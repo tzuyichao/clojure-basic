@@ -1,3 +1,4 @@
+; BigInt (which is printed with a trailing N)
 (defn tail-fibo [n]
   (letfn [(fib [current next n]
     (if (zero? n)
