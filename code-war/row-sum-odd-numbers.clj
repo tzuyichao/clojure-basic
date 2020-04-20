@@ -1,7 +1,11 @@
 (ns row-sum-odd-numbers.core)
 
+(defn odd-seq [n]
+  [1])
+
 (defn row-sum-odd-numbers [row-num] 
-  1)
+  (let [target-seq (odd-seq row-num)]
+    (reduce + target-seq)))
 
 (ns row-sum-sample-tests
   (:require [clojure.test :refer :all]
