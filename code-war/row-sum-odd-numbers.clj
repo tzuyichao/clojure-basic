@@ -1,7 +1,9 @@
 (ns row-sum-odd-numbers.core)
 
 (defn odd-seq [n]
-  [1])
+  (let [start (+ (* (- n 1) n) 1)
+        end (+ (* 2 n) start)]
+    (range start end 2)))
 
 (defn row-sum-odd-numbers [row-num] 
   (let [target-seq (odd-seq row-num)]
