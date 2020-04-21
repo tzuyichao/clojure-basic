@@ -3,12 +3,12 @@ learning clojure again
 
 
 - [x] Getting Clojure
-- [] Programming Clojure
-- [] Clojure Applied
-- [] Living Clojure
-- [] Quick Clojure
-- [] Professional Clojure
-- []
+- [ ] Programming Clojure
+- [ ] Clojure Applied
+- [ ] Living Clojure
+- [ ] Quick Clojure
+- [ ] Professional Clojure
+- [ ]
 
 
 
