@@ -2,7 +2,7 @@
 learning clojure again
 
 
-- [v] Getting Clojure
+- [x] Getting Clojure
 - [] Programming Clojure
 - [] Clojure Applied
 - [] Living Clojure
