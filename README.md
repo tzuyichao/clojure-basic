@@ -2,9 +2,14 @@
 learning clojure again
 
 
-- [] Getting Clojure
+- [v] Getting Clojure
 - [] Programming Clojure
-- [] 
+- [] Clojure Applied
+- [] Living Clojure
+- [] Quick Clojure
+- [] Professional Clojure
+- []
+
 
 
 # Memo
