@@ -2,13 +2,13 @@
 learning clojure again
 
 
+# References
 - [x] Getting Clojure
 - [ ] Programming Clojure
 - [ ] Clojure Applied
 - [ ] Living Clojure
 - [ ] Quick Clojure
 - [ ] Professional Clojure
-- [ ]
 
 
 
