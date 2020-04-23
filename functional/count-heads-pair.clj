@@ -20,3 +20,7 @@
         (cons pair (by-pairs (rest coll)))))))
 
 (println (by-pairs [:h :h :h :t :h]))
+
+(println (partition 2 [:h :h :h :t :h]))
+
+(println (partition 2 1 [:h :h :h :t :h]))
