@@ -13,4 +13,8 @@
 (println (s/valid? :user/ranged-roll 6))
 (println (s/valid? :user/ranged-roll 7))
 
+(s/def ::age (s/int-in 0 99))
+
+(println (s/valid? ::age 10))
+
 (println "done")
